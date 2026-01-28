@@ -1,0 +1,62 @@
+[2026-01-28 14:10:41.405451] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(or\s+1=1) | PAYLOAD={"payload":"' OR 1=1 --"}
+[2026-01-28 14:10:43.389051] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(or\s+1=1) | PAYLOAD={"payload":"' OR 1=1 --"}
+[2026-01-28 14:10:56.653706] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(--|#|/\\*) | PAYLOAD={"payload":"<script>alert('XSS')</script>"}
+[2026-01-28 14:11:47.444995] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(or\s+1=1) | PAYLOAD={"payload":"' OR 1=1 --"}
+[2026-01-28 14:11:52.580930] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(--|#|/\\*) | PAYLOAD={"payload":"admin' --\n"}
+[2026-01-28 14:11:53.188219] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(--|#|/\\*) | PAYLOAD={"payload":"admin' --\n"}
+[2026-01-28 14:11:53.356111] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(--|#|/\\*) | PAYLOAD={"payload":"admin' --\n"}
+[2026-01-28 14:12:03.012585] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(union\s+select) | PAYLOAD={"payload":"' UNION SELECT username, password FROM users --\n"}
+[2026-01-28 14:12:14.748872] IP=127.0.0.1 | ATTACK=XSS | RULE=onerror\s*= | PAYLOAD={"payload":"<img src=x onerror=alert('XSS')>"}
+[2026-01-28 14:13:42.539684] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(--|#|/\\*) | PAYLOAD={"payload":"<div onmouseover=\"alert('XSS')\">Hover me</div>\n"}
+[2026-01-28 14:13:43.434635] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(--|#|/\\*) | PAYLOAD={"payload":"<div onmouseover=\"alert('XSS')\">Hover me</div>\n"}
+[2026-01-28 14:13:43.645538] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(--|#|/\\*) | PAYLOAD={"payload":"<div onmouseover=\"alert('XSS')\">Hover me</div>\n"}
+[2026-01-28 14:13:43.794780] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(--|#|/\\*) | PAYLOAD={"payload":"<div onmouseover=\"alert('XSS')\">Hover me</div>\n"}
+[2026-01-28 14:13:45.395119] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(--|#|/\\*) | PAYLOAD={"payload":"<div onmouseover=\"alert('XSS')\">Hover me</div>"}
+[2026-01-28 14:13:45.610960] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(--|#|/\\*) | PAYLOAD={"payload":"<div onmouseover=\"alert('XSS')\">Hover me</div>"}
+[2026-01-28 14:13:45.746751] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(--|#|/\\*) | PAYLOAD={"payload":"<div onmouseover=\"alert('XSS')\">Hover me</div>"}
+[2026-01-28 14:13:45.866851] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(--|#|/\\*) | PAYLOAD={"payload":"<div onmouseover=\"alert('XSS')\">Hover me</div>"}
+[2026-01-28 14:13:46.002762] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(--|#|/\\*) | PAYLOAD={"payload":"<div onmouseover=\"alert('XSS')\">Hover me</div>"}
+[2026-01-28 14:13:46.242842] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(--|#|/\\*) | PAYLOAD={"payload":"<div onmouseover=\"alert('XSS')\">Hover me</div>"}
+[2026-01-28 14:13:46.378767] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(--|#|/\\*) | PAYLOAD={"payload":"<div onmouseover=\"alert('XSS')\">Hover me</div>"}
+[2026-01-28 14:13:46.754862] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(--|#|/\\*) | PAYLOAD={"payload":"<div onmouseover=\"alert('XSS')\">Hover me</div>"}
+[2026-01-28 14:13:46.898717] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(--|#|/\\*) | PAYLOAD={"payload":"<div onmouseover=\"alert('XSS')\">Hover me</div>"}
+[2026-01-28 14:13:47.050760] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(--|#|/\\*) | PAYLOAD={"payload":"<div onmouseover=\"alert('XSS')\">Hover me</div>"}
+[2026-01-28 14:13:54.043327] IP=127.0.0.1 | ATTACK=XSS | RULE=javascript: | PAYLOAD={"payload":"javascript:alert('XSS')\n"}
+[2026-01-28 14:13:54.282930] IP=127.0.0.1 | ATTACK=XSS | RULE=javascript: | PAYLOAD={"payload":"javascript:alert('XSS')\n"}
+[2026-01-28 14:13:54.442606] IP=127.0.0.1 | ATTACK=XSS | RULE=javascript: | PAYLOAD={"payload":"javascript:alert('XSS')\n"}
+[2026-01-28 14:17:01.537572] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(--|#|/\\*) | PAYLOAD={"payload":"'/**/OR/**/1=1\n"}
+[2026-01-28 14:17:04.376777] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(--|#|/\\*) | PAYLOAD={"payload":"'/**/OR/**/1=1"}
+[2026-01-28 14:17:04.528431] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(--|#|/\\*) | PAYLOAD={"payload":"'/**/OR/**/1=1"}
+[2026-01-28 14:17:04.664289] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(--|#|/\\*) | PAYLOAD={"payload":"'/**/OR/**/1=1"}
+[2026-01-28 14:17:04.800316] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(--|#|/\\*) | PAYLOAD={"payload":"'/**/OR/**/1=1"}
+[2026-01-28 14:17:15.081493] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(--|#|/\\*) | PAYLOAD={"payload":"%3Cscript%3Ealert(1)%3C/script%3E\n"}
+[2026-01-28 14:17:16.408496] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(--|#|/\\*) | PAYLOAD={"payload":"%3Cscript%3Ealert(1)%3C/script%3E\n"}
+[2026-01-28 14:17:16.552256] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(--|#|/\\*) | PAYLOAD={"payload":"%3Cscript%3Ealert(1)%3C/script%3E\n"}
+[2026-01-28 14:17:22.193372] IP=127.0.0.1 | ATTACK=XSS | RULE=on\w+\s*= | PAYLOAD={"payload":"<svg onload=alert(1)>\n<div onclick=alert(1)>\n"}
+[2026-01-28 14:17:30.480824] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(--|#|/\\*) | PAYLOAD={"payload":"r\"<script.*?>.*?</script>\"\n"}
+[2026-01-28 14:17:36.136844] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(--|#|/\\*) | PAYLOAD={"payload":"<script>alert(1)</script>\n"}
+[2026-01-28 14:17:36.712077] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(--|#|/\\*) | PAYLOAD={"payload":"<script>alert(1)</script>\n"}
+[2026-01-28 14:19:07.887929] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(or\s+1=1) | PAYLOAD={"payload":"' OR 1=1 --"}
+[2026-01-28 14:19:20.983551] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(--|#|/\\*) | PAYLOAD={"payload":"<script>alert(1)</script>\n"}
+[2026-01-28 14:19:21.630715] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(--|#|/\\*) | PAYLOAD={"payload":"<script>alert(1)</script>\n"}
+[2026-01-28 14:19:49.904273] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(--|#|/\\*) | PAYLOAD=q=%3Cscript%3Ealert%281%29%3C%2Fscript%3E
+[2026-01-28 14:30:18.344505] IP=127.0.0.1 | ATTACK=SQL Injection | RULE=(?i)(or\s+1=1) | PAYLOAD={"payload": "' OR 1=1 --\n"}
+[2026-01-28 15:02:10.600889] 127.0.0.1 | XSS | <\s*script | {"payload":"<script>alert(1)</script>\n"}
+[2026-01-28 15:02:18.024786] 127.0.0.1 | SQL Injection | or\s+1=1 | {"payload":"' OR 1=1 --\n"}
+[2026-01-28 15:02:19.536318] 127.0.0.1 | SQL Injection | or\s+1=1 | {"payload":"' OR 1=1 --\n"}
+[2026-01-28 15:02:26.657675] 127.0.0.1 | Anomalous Payload | ML | {"payload":"hello"}
+[2026-01-28 15:03:42.519788] 127.0.0.1 | XSS | <\s*script | {"payload":"<script>alert(1)</script>\n"}
+[2026-01-28 15:03:49.887819] 127.0.0.1 | SQL Injection | or\s+1=1 | {"payload":"' OR 1=1 --\n"}
+[2026-01-28 15:03:55.407939] 127.0.0.1 | XSS | on\w+\s*= | {"payload":"<img src=x onerror=alert(1)>\n"}
+[2026-01-28 15:04:00.640513] 127.0.0.1 | Anomalous Payload | ML | {"payload":"hello world\n"}
+[2026-01-28 15:08:24.204480] 127.0.0.1 | XSS | <\s*script | {"payload":"<script>alert(1)</script>\n"}
+[2026-01-28 15:08:31.444404] 127.0.0.1 | SQL Injection | or\s+1=1 | {"payload":"' OR 1=1 --\n"}
+[2026-01-28 15:08:37.476189] 127.0.0.1 | XSS | on\w+\s*= | {"payload":"<img src=x onerror=alert(1)>\n"}
+[2026-01-28 15:09:06.667978] 127.0.0.1 | XSS | <\s*script | {"payload":"<script>alert(1)</script>\n"}
+[2026-01-28 15:11:09.633903] 127.0.0.1 | XSS | <\s*script | {"payload":"<script>alert(1)</script>\n"}
+[2026-01-28 15:13:41.120006] 127.0.0.1 | XSS | <\s*script | {"payload":"<script>alert(1)</script>\n"}
+[2026-01-28 15:13:47.864164] 127.0.0.1 | SQL Injection | or\s+1=1 | {"payload":"' OR 1=1 --\n"}
+[2026-01-28 15:13:53.320253] 127.0.0.1 | XSS | on\w+\s*= | {"payload":"<img src=x onerror=alert(1)>\n"}
+[2026-01-28 15:13:58.127627] 127.0.0.1 | XSS | on\w+\s*= | {"payload":"<img src=x onerror=alert(1)>\n"}
+[2026-01-28 15:16:12.542171] 127.0.0.1 | XSS | <\s*script | {"payload":"<script>alert(1)</script>\n"}
+[2026-01-28 15:16:18.581639] 127.0.0.1 | SQL Injection | or\s+1=1 | {"payload":"' OR 1=1 --\n"}

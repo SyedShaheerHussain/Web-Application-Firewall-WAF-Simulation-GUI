@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WAF Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+body{margin:0;font-family:Arial;background:#020617;color:white;}
+header{background:#0f172a;padding:15px;text-align:center;font-size:22px;font-weight:bold;}
+.container{display:flex;height:calc(100vh-60px);}
+.left{width:40%;padding:20px;border-right:1px solid #1e293b;}
+.right{width:60%;padding:20px;}
+textarea{width:100%;height:120px;padding:10px;border-radius:6px;border:none;resize:none;}
+button{margin-top:10px;padding:10px 15px;border:none;border-radius:6px;background:#22c55e;font-weight:bold;cursor:pointer;}
+.result{margin-top:15px;padding:10px;border-radius:6px;}
+.allowed{background:#16a34a;}
+.blocked{background:#dc2626;}
+</style>
+</head>
+<body>
+<header>🛡️ Web Application Firewall (WAF) Simulation</header>
+<div class="container">
+<div class="left">
+<h3>🔎 Test SQLi / XSS Payload</h3>
+<label>Enter payload:</label>
+<textarea id="payload" placeholder="' OR 1=1 --
+<script>alert(1)</script>"></textarea>
+<button onclick="sendPayload()">Detect</button>
+<div id="result"></div>
+</div>
+<div class="right">
+<h3>📈 Live Traffic</h3>
+<canvas id="chart"></canvas>
+</div>
+</div>
+
+<script>
+const ctx = document.getElementById("chart").getContext("2d");
+
+const chart = new Chart(ctx,{
+    type:"bar",
+    data:{
+        labels:["Allowed","Blocked"],
+        datasets:[{
+            label:"Requests",
+            data:[0,0],
+            backgroundColor:["#22c55e","#ef4444"]
+        }]
+    },
+    options:{
+        responsive:true,
+        animation:false,
+        scales:{y:{beginAtZero:true, precision:0}}
+    }
+});
+
+/* 🔁 POLLING EVERY 1 SECOND */
+async function updateChart(){
+    const res = await fetch("/stats");
+    const data = await res.json();
+    chart.data.datasets[0].data = [data.allowed, data.blocked];
+    chart.update();
+}
+
+setInterval(updateChart, 1000);
+
+/* Detect button */
+async function sendPayload(){
+    const payload = document.getElementById("payload").value;
+
+    const res = await fetch("/test",{
+        method:"POST",
+        headers:{"Content-Type":"application/json"},
+        body:JSON.stringify({payload})
+    });
+
+    const data = await res.json();
+    const resultDiv = document.getElementById("result");
+
+    if(data.status === "blocked"){
+        resultDiv.className="result blocked";
+        resultDiv.innerHTML="🚫 BLOCKED: "+data.attack;
+    }else{
+        resultDiv.className="result allowed";
+        resultDiv.innerHTML="✅ ALLOWED";
+    }
+}
+</script>
+
+</body>
+</html>

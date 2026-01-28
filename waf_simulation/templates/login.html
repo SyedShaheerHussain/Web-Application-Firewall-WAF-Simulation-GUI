@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WAF Login</title>
+<style>
+body{font-family:Arial;background:#020617;color:white;display:flex;height:100vh;justify-content:center;align-items:center;}
+.box{background:#0f172a;padding:30px;border-radius:10px;width:300px;}
+input,button{width:100%;margin-top:10px;padding:10px;border-radius:5px;border:none;}
+button{background:#22c55e;font-weight:bold;cursor:pointer;}
+.error{color:red;font-size:12px;margin-top:5px;}
+</style>
+</head>
+<body>
+<div class="box">
+<h2>🔐 WAF Login</h2>
+{% if error %}
+<p class="error">{{ error }}</p>
+{% endif %}
+<form action="/login" method="post">
+<input type="text" name="username" placeholder="Username" required>
+<input type="password" name="password" placeholder="Password" required>
+<button type="submit">Login</button>
+</form>
+<p style="margin-top:10px;font-size:12px;">admin / admin123</p>
+</div>
+</body>
+</html>
