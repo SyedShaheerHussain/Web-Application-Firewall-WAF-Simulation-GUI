@@ -165,7 +165,7 @@ pip install fastapi uvicorn jinja2
 ### 3️⃣ Project Setup
 
 ```
-cd WAF-Project
+cd waf_simulation
 
 ```
 
