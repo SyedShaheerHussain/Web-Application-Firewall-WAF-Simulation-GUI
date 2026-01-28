@@ -232,12 +232,9 @@ hello world
 
 ## ⚠️ Cautions
 
-> [!Caution]
-
+> [!caution]
 > * This is a **simulation**, not a production WAF
-
 > * Regex-based detection has limitations
-
 > * Do not deploy on live servers
 
 ## 📌 Important Notes
@@ -249,7 +246,6 @@ hello world
 ## 📢 Disclaimer
 
 > [!note]
-
 > This project is intended **strictly for educational and research purposes**. The developer is not responsible for misuse of this system.
 
 ## 🚀 Future Enhancements
