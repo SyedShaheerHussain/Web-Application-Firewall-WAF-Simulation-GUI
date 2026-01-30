@@ -12,6 +12,20 @@ This project is a **fully functional Web Application Firewall (WAF) Simulation**
 
 The system acts as a **middleware layer** between users and a protected web application, inspecting every incoming request, detecting malicious payloads, blocking attacks, and visualizing traffic statistics through a modern web dashboard.
 
+## 📷 Screenshots
+
+![Screenshot 1]()
+
+![Screenshot 2]()
+
+![Screenshot 3]()
+
+![Screenshot 4]()
+
+![Screenshot 5]()
+
+![Screenshot 6]()
+
 ## 🎯 Objectives
 
 1. Understand how a WAF works internally
