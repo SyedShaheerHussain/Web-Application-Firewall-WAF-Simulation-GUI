@@ -14,17 +14,17 @@ The system acts as a **middleware layer** between users and a protected web appl
 
 ## 📷 Screenshots
 
-![Screenshot 1]()
+![Screenshot 1](https://github.com/SyedShaheerHussain/Web-Application-Firewall-WAF-Simulation-GUI/blob/0c3400498bd0022fbdb47b0d6296faccbcfe11e2/screenshots/Screenshot%20(42).png)
 
-![Screenshot 2]()
+![Screenshot 2](https://github.com/SyedShaheerHussain/Web-Application-Firewall-WAF-Simulation-GUI/blob/0c3400498bd0022fbdb47b0d6296faccbcfe11e2/screenshots/Screenshot%20(43).png)
 
-![Screenshot 3]()
+![Screenshot 3](https://github.com/SyedShaheerHussain/Web-Application-Firewall-WAF-Simulation-GUI/blob/0c3400498bd0022fbdb47b0d6296faccbcfe11e2/screenshots/Screenshot%20(44).png)
 
-![Screenshot 4]()
+![Screenshot 4](https://github.com/SyedShaheerHussain/Web-Application-Firewall-WAF-Simulation-GUI/blob/0c3400498bd0022fbdb47b0d6296faccbcfe11e2/screenshots/Screenshot%20(45).png)
 
-![Screenshot 5]()
+![Screenshot 5](https://github.com/SyedShaheerHussain/Web-Application-Firewall-WAF-Simulation-GUI/blob/0c3400498bd0022fbdb47b0d6296faccbcfe11e2/screenshots/Screenshot%20(46).png)
 
-![Screenshot 6]()
+![Screenshot 6](https://github.com/SyedShaheerHussain/Web-Application-Firewall-WAF-Simulation-GUI/blob/0c3400498bd0022fbdb47b0d6296faccbcfe11e2/screenshots/Screenshot%20(47).png)
 
 ## 🎯 Objectives
 
