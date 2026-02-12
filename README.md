@@ -1,8 +1,6 @@
-# Web Application Firewall (WAF) Simulation
+# 🛡️ Web Application Firewall (WAF) Simulation
 
 Monitors, Detects, and Blocks SQL Injection and XSS attacks in real time.
-
-# 🛡️ Web Application Firewall (WAF) Simulation
 
 **Developed By:** © **Syed Shaheer Hussain**
 
